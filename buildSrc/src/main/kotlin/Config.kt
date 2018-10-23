@@ -12,6 +12,7 @@ object Config {
 
     object Plugins {
         const val android = "com.android.tools.build:gradle:3.2.0-rc01"
+        const val maven = "com.github.dcendents:android-maven-gradle-plugin:2.1"
         const val kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         const val google = "com.google.gms:google-services:4.1.0"
 

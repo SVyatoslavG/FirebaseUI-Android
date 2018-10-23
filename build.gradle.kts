@@ -20,7 +20,7 @@ buildscript {
         classpath(Config.Plugins.google)
         classpath(Config.Plugins.bintray)
         classpath(Config.Plugins.buildInfo)
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1' // Add this line
+        classpath(Config.Plugins.maven)
     }
 }
 
