@@ -12,3 +12,8 @@ dependencies {
     api(project(":firestore"))
     api(project(":storage"))
 }
+
+
+apply plugin: 'com.github.dcendents.android-maven'  
+
+group='com.github.SVyatoslavG'
