@@ -157,7 +157,7 @@ fun Project.setupPublishing() {
         from(javadoc.get().destinationDir)
     }
 
-    artifacts.add("archives", javadocJar)
+    // artifacts.add("archives", javadocJar)
     artifacts.add("archives", sourcesJar)
 
     afterEvaluate {
@@ -249,7 +249,7 @@ fun Project.setupPublishing() {
                 """.trimMargin())
 
                 artifact(releaseAar)
-                artifact(javadocJar.get())
+                //artifact(javadocJar.get())
                 artifact(sourcesJar.get())
 
                 pom {

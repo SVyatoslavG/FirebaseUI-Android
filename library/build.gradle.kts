@@ -1,4 +1,10 @@
+import com.android.build.gradle.internal.dsl.TestOptions
+
 tasks.named("check").configure { dependsOn("testAll", "prepareArtifacts") }
+
+apply(plugin = "com.github.dcendents.android-maven")
+
+group = "com.github.SVyatoslavG"
 
 android {
     lintOptions {
@@ -12,8 +18,3 @@ dependencies {
     api(project(":firestore"))
     api(project(":storage"))
 }
-
-
-apply plugin: 'com.github.dcendents.android-maven'  
-
-group='com.github.SVyatoslavG'
